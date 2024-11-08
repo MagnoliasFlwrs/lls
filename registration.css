@@ -1,0 +1,379 @@
+.registration-block {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  flex-grow: 1;
+  background: #FAFAFC;
+}
+@media (max-width: 1024px) {
+  .registration-block {
+    gap: 36px;
+  }
+}
+.registration-block .registration-header {
+  width: 100%;
+  padding-top: 24px;
+}
+@media (max-width: 1024px) {
+  .registration-block .registration-header {
+    padding-top: 20px;
+  }
+}
+.registration-block .registration-header .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.registration-block .registration-header .content .close {
+  cursor: pointer;
+  display: flex;
+  width: 42px;
+  height: 42px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+  background: #F5F5F7;
+}
+.registration-block .registration-header .content .close:hover {
+  background: #ECECEC;
+}
+.registration-block .registration-body {
+  padding-bottom: 50px;
+  flex-grow: 1;
+}
+.registration-block .registration-body .content .form-containers {
+  padding: 36px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+@media (max-width: 1024px) {
+  .registration-block .registration-body .content .form-containers {
+    padding: 0;
+  }
+}
+.registration-block .registration-body .content .form-containers .step-1 {
+  display: flex;
+  width: 500px;
+  height: 469px;
+  padding: 56px 0px 24px 0px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 14px;
+  background: #FFF;
+}
+@media (max-width: 1024px) {
+  .registration-block .registration-body .content .form-containers .step-1 {
+    display: flex;
+    height: 469px;
+    padding: 56px 24px 24px 24px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 14px;
+    background: #FFF;
+  }
+}
+@media (max-width: 520px) {
+  .registration-block .registration-body .content .form-containers .step-1 {
+    width: 100%;
+  }
+}
+.registration-block .registration-body .content .form-containers .step-1 .title {
+  color: #000;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 28.8px */
+}
+.registration-block .registration-body .content .form-containers .step-1 form {
+  display: flex;
+  gap: 10px;
+}
+@media (max-width: 520px) {
+  .registration-block .registration-body .content .form-containers .step-1 form {
+    width: 100%;
+  }
+}
+.registration-block .registration-body .content .form-containers .step-1 form input {
+  display: flex;
+  width: 359px;
+  height: 56px;
+  padding: 10px 16px;
+  align-items: center;
+  gap: 4px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  outline: none;
+}
+@media (max-width: 520px) {
+  .registration-block .registration-body .content .form-containers .step-1 form input {
+    max-width: 359px;
+    width: 100%;
+  }
+}
+.registration-block .registration-body .content .form-containers .step-1 form input::placeholder {
+  color: #333;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.registration-block .registration-body .content .form-containers .step-1 form button {
+  flex-shrink: 0;
+  display: flex;
+  width: 56px;
+  height: 56px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  background: var(--Red, #EA2119);
+  cursor: pointer;
+  border: none;
+}
+.registration-block .registration-body .content .form-containers .step-1 form button:hover {
+  background: #E01D16;
+}
+.registration-block .registration-body .content .form-containers .step-1 .have-account {
+  color: rgba(29, 29, 31, 0.7);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  margin-bottom: 24px;
+}
+.registration-block .registration-body .content .form-containers .step-1 .have-account a {
+  color: var(--blue, #0070C9);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+}
+.registration-block .registration-body .content .form-containers .step-1 .have-account a:hover {
+  color: #0067B9;
+}
+.registration-block .registration-body .content .form-containers .step-2 {
+  display: flex;
+  padding: 56px 36px 24px 36px;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+  align-self: stretch;
+  border-radius: 14px;
+  background: #FFF;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .registration-block .registration-body .content .form-containers .step-2 {
+    display: flex;
+    padding: 56px 24px 24px 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+    align-self: stretch;
+    border-radius: 14px;
+    background: #FFF;
+  }
+}
+.registration-block .registration-body .content .form-containers .step-2 .title {
+  color: #000;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 28.8px */
+}
+.registration-block .registration-body .content .form-containers .step-2 .step-2-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .registration-block .registration-body .content .form-containers .step-2 .step-2-container {
+    flex-direction: column;
+    gap: 56px;
+  }
+}
+.registration-block .registration-body .content .form-containers .step-2 .step-2-container .info-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.registration-block .registration-body .content .form-containers .step-2 .step-2-container .info-block .chapter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+.registration-block .registration-body .content .form-containers .step-2 .step-2-container .info-block .chapter p {
+  color: #333;
+  font-family: Roboto;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 20.4px */
+}
+.registration-block .registration-body .content .form-containers .step-2 .step-2-container .info-block .chapter a {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+.registration-block .registration-body .content .form-containers .step-2 .step-2-container .info-block .chapter a span {
+  color: #007AFF;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 16.8px */
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+.registration-block .registration-body .content .form-containers .step-2 .step-2-container .info-block .chapter a:hover span {
+  color: #0067B9;
+}
+.registration-block .registration-body .content .form-containers .step-2 .step-2-container .info-block .chapter a:hover svg path {
+  fill: #0067B9;
+}
+.registration-block .registration-body .content .form-containers .step-2 .step-2-container .info-block .chapter ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+.registration-block .registration-body .content .form-containers .step-2 .step-2-container .info-block .chapter ul li {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 14.4px */
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.registration-block .registration-body .content .form-containers .step-2 .step-2-container .info-block .chapter ul li::before {
+  content: " ";
+  width: 2px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 50px;
+  display: block;
+  flex-shrink: 0;
+}
+.registration-block .registration-body .content .form-containers .step-2 .step-2-container .form-block {
+  width: 535px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+}
+.registration-block .registration-body .content .form-containers .step-2 .step-2-container .form-block .title {
+  color: #333;
+  font-family: Roboto;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 20.4px */
+}
+.registration-block .registration-body .content .form-containers .step-2 button {
+  width: 394px;
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 100px;
+  background: #EA2119;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 20.4px */
+  cursor: pointer;
+  border: none;
+  margin: 0 auto;
+}
+@media (max-width: 520px) {
+  .registration-block .registration-body .content .form-containers .step-2 button {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+.registration-block .registration-body .content .form-containers .step-2 button:hover {
+  background: #E01D16;
+}
+.registration-block .registration-body .content .form-containers .step-3 {
+  display: flex;
+  height: 469px;
+  padding: 56px 36px 24px 36px;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+  align-self: stretch;
+  border-radius: 14px;
+  background: #FFF;
+}
+@media (max-width: 1024px) {
+  .registration-block .registration-body .content .form-containers .step-3 {
+    display: flex;
+    padding: 56px 24px 24px 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+    align-self: stretch;
+    border-radius: 14px;
+    background: #FFF;
+    height: auto;
+  }
+}
+.registration-block .registration-body .content .form-containers .step-3 .text {
+  max-width: 375px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.registration-block .registration-body .content .form-containers .step-3 .text p {
+  color: #333;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 28.8px */
+  text-align: center;
+}
+.registration-block .registration-body .content .form-containers .step-3 .text span {
+  color: #333;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 20.4px */
+}
+
+.registration-footer {
+  background: #FAFAFC;
+}
+
+/*# sourceMappingURL=registration.css.map */
